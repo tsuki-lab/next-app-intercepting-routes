@@ -8,18 +8,13 @@ export default async function Home() {
     queries: {
       fields: ["image", "id"],
     },
-    customRequestInit: {
-      next: {
-        revalidate: 60,
-      },
-    },
   });
   return (
     <main className="p-4">
       <ul className="flex gap-4 flex-wrap lg:justify-start justify-center md:max-w-[62rem] mx-auto">
         {contents.map((content) => (
           <li key={content.id}>
-            <Link href={`/image/${content.id}`}>
+            <Link href={`/image/${content.id}`} prefetch>
               <ImageFrame
                 src={content.image.url}
                 alt={content.image.url}
