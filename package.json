@@ -1,5 +1,5 @@
 {
-  "name": "next-app-canary",
+  "name": "next-app-intercepting-routes",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,19 +9,23 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "next": "14.0.1"
+    "@radix-ui/react-dialog": "^1.0.5",
+    "clsx": "^2.0.0",
+    "colorthief": "^2.4.0",
+    "microcms-ts-sdk": "^1.0.2",
+    "next": "13.5.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "autoprefixer": "^10.0.1",
-    "postcss": "^8",
-    "tailwindcss": "^3.3.0",
-    "eslint": "^8",
-    "eslint-config-next": "14.0.1"
+    "@types/node": "^20.9.0",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.53.0",
+    "eslint-config-next": "14.0.1",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5",
+    "typescript": "^5.2.2"
   }
 }
