@@ -1,6 +1,6 @@
 "use client";
 import clsx from "clsx";
-import colorThief from "colorthief";
+import ColorThief from "colorthief";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
@@ -12,14 +12,15 @@ export const ImageFrame = ({ className, src, alt, ...rest }: ImageProps) => {
   const [color, setColor] = useState<[number, number, number]>();
 
   useEffect(() => {
+    if (window === undefined) return;
     const img = ref.current;
     if (!img) return;
 
     if (img.complete) {
-      setColor(colorThief.getColor(img));
+      setColor(new ColorThief().getColor(img));
     } else {
       img.addEventListener("load", () => {
-        setColor(colorThief.getColor(img));
+        setColor(new ColorThief().getColor(img));
       });
     }
   }, []);
