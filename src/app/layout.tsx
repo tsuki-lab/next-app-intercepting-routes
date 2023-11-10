@@ -8,6 +8,20 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "hanetsuki's Generated midjourney",
   description: "hanetsuki's Generated midjourney",
+  alternates: {
+    canonical: "https://midjourney.tsuki-lab.net/",
+  },
+  openGraph: {
+    title: "hanetsuki's Generated midjourney",
+    description: "hanetsuki's Generated midjourney",
+    type: "website",
+    url: "https://midjourney.tsuki-lab.net/",
+  },
+  twitter: {
+    card: "summary",
+    title: "hanetsuki's Generated midjourney",
+    creator: "@hanetsuki_dev",
+  },
 };
 
 export default function RootLayout({
