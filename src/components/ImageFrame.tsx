@@ -1,13 +1,13 @@
 "use client";
 import clsx from "clsx";
-import ColorThief from "colorthief";
+import colorThief from "colorthief";
 import Image from "next/image";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 type ImageProps = Parameters<typeof Image>[0];
 
 export const ImageFrame = ({ className, src, alt, ...rest }: ImageProps) => {
-  const colorThief = useMemo(() => new ColorThief(), []);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const ref = useRef<HTMLImageElement>(null);
   const [color, setColor] = useState<[number, number, number]>();
 
@@ -22,7 +22,7 @@ export const ImageFrame = ({ className, src, alt, ...rest }: ImageProps) => {
         setColor(colorThief.getColor(img));
       });
     }
-  }, [colorThief]);
+  }, []);
 
   return (
     <figure

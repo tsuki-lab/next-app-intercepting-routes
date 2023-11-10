@@ -15,8 +15,8 @@ dependencies:
     specifier: ^2.4.0
     version: 2.4.0
   microcms-ts-sdk:
-    specifier: ^1.0.2
-    version: 1.0.2
+    specifier: ^0.7.0
+    version: 0.7.0
   next:
     specifier: 13.5.6
     version: 13.5.6(react-dom@18.2.0)(react@18.2.0)
@@ -2262,8 +2262,8 @@ packages:
       qs: 6.11.2
     dev: false
 
-  /microcms-ts-sdk@1.0.2:
-    resolution: {integrity: sha512-W3Q1LjQqBrt6dDs1PhGDfCK3Cpw6rUeOmnnaKqwt25depkrCg5VkhxqSnTP7B6+ez6VOjBjxwSrp35xSy8RkSg==}
+  /microcms-ts-sdk@0.7.0:
+    resolution: {integrity: sha512-DG7+ZNE9nEc/OCLwKcsHrIGUwGH+ASm+2f6V10KQrTA/A9ulzX1Lmb7MbKd7RKFXZ1GWJ9Lc0uGu7E+iXGfUkg==}
     dependencies:
       microcms-js-sdk: 2.7.0
     dev: false

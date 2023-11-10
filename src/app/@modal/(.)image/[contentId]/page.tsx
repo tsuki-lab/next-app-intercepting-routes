@@ -15,6 +15,11 @@ const ImageDetailPage = async ({ params }: ImageDetailPageProps) => {
     queries: {
       fields: ["image", "title", "magicWord"],
     },
+    customRequestInit: {
+      next: {
+        revalidate: 60,
+      },
+    },
   });
   return (
     <Modal>

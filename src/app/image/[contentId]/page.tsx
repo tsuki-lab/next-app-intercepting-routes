@@ -16,6 +16,11 @@ const ImageDetailPage = async ({ params }: ImageDetailPageProps) => {
     queries: {
       fields: ["image", "revisedAt", "title", "magicWord"],
     },
+    customRequestInit: {
+      next: {
+        revalidate: 60,
+      },
+    },
   });
   const revisedDate = new Date(content.revisedAt!);
   return (

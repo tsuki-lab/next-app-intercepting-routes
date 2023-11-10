@@ -3,10 +3,15 @@ import { microcms } from "@/lib/microcms";
 import Link from "next/link";
 
 export default async function Home() {
-  const contents = await microcms.getAllContents({
+  const { contents } = await microcms.getAll({
     endpoint: "viejr3qf",
     queries: {
       fields: ["image", "id"],
+    },
+    customRequestInit: {
+      next: {
+        revalidate: 60,
+      },
     },
   });
   return (
