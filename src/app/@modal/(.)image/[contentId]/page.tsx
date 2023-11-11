@@ -17,7 +17,7 @@ const ImageDetailPage = async ({ params }: ImageDetailPageProps) => {
     },
   });
   return (
-    <Modal>
+    <Modal leavedPathname="/" pathname={`/image/${params.contentId}`}>
       <div className="relative">
         <ImageFrame
           src={content.image.url}

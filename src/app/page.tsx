@@ -19,7 +19,7 @@ export default async function Home() {
                 src={content.image.url}
                 alt={content.image.url}
                 priority={i < 3}
-                className="md:w-80 w-[calc(100svw-2rem)] aspect-[9/16] rounded-lg animate-fade-in-bottom h-full"
+                className="md:w-80 w-[calc(100svw-2rem)] aspect-[9/16] rounded-lg h-full"
               />
             </Link>
           </li>
