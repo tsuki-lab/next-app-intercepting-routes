@@ -15,10 +15,17 @@ export const Modal = ({
       <Dialog.Portal>
         <Dialog.Overlay className="bg-modal fixed inset-0 animate-fade-in" />
         <Dialog.Content
-          className="fixed mx-auto inset-0 flex justify-center items-center animate-fade-in-bottom"
+          className="animate-fade-in top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 fixed z-20"
           onEscapeKeyDown={(e) => {
             e.preventDefault();
             router.back();
+          }}
+          onPointerDownOutside={(e) => {
+            e.preventDefault();
+            router.back();
+          }}
+          onTouchStart={(e) => {
+            console.log(e);
           }}
         >
           <div className="bg-white rounded relative">
