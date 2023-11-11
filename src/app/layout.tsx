@@ -11,19 +11,20 @@ const SITE_DESCRIPTION =
 const SITE_URL =
   process.env.NODE_ENV === "development"
     ? "http://localhost:3000"
-    : "https://midjourney.tsuki-lab.net/";
+    : "https://midjourney.tsuki-lab.net";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: SITE_TITLE,
   description: SITE_DESCRIPTION,
   alternates: {
-    canonical: SITE_URL,
+    canonical: "/",
   },
   openGraph: {
     title: SITE_TITLE,
     description: SITE_DESCRIPTION,
     type: "website",
-    url: SITE_URL,
+    url: "/",
   },
   twitter: {
     card: "summary",
