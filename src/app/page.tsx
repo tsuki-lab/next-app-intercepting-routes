@@ -16,7 +16,7 @@ export default async function Home() {
           <li key={content.id}>
             <Link href={`/image/${content.id}`} prefetch>
               <ImageFrame
-                src={`${content.image.url}?fm=webp&w=800`}
+                src={content.image.url}
                 alt={content.image.url}
                 priority={i < 3}
                 className="md:w-80 w-[calc(100svw-2rem)] aspect-[9/16] rounded-lg animate-fade-in-bottom h-full"

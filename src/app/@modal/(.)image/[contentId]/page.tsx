@@ -20,7 +20,7 @@ const ImageDetailPage = async ({ params }: ImageDetailPageProps) => {
     <Modal>
       <div className="relative">
         <ImageFrame
-          src={`${content.image.url}?fm=webp`}
+          src={content.image.url}
           alt={content.image.url}
           priority
           className="md:aspect-square md:w-auto w-[calc(100svw-2rem)] h-[80svh] md:h-[calc(100vmin-4rem)]"
