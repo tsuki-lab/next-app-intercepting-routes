@@ -20,7 +20,7 @@ export const Modal = <L extends string, P extends string>({
   const onLeave = useCallback(
     (e: MouseEvent | Event) => {
       e.preventDefault();
-      router.push(leavedPathname);
+      router.push(leavedPathname, { scroll: false });
       setOpenFlag(false);
     },
     [leavedPathname, router]
