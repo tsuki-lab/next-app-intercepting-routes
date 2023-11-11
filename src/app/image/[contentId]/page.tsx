@@ -37,6 +37,7 @@ const ImageDetailPage = async ({ params }: ImageDetailPageProps) => {
         <ImageFrame
           src={content.image.url}
           alt={content.image.url}
+          priority
           className="lg:min-h-[calc(100svh-6rem)] md:aspect-square aspect-[9/16] lg:aspect-[9/16]"
         />
       </div>
